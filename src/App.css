@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "lato";
+  src: url(./assets/fonts/lato/Lato-Light.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "lora";
+  src: url(./assets/fonts/lora/static/Lora-Bold.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  font-family: lato !important;
+}
+
+.carousel_indicator_btn{
+  height: 6px !important;
+}
+
+.carousel-indicators{
+  position: absolute !important;
+  bottom: 20% !important;
+}
+/* .carousel-indicators [data-bs-target]{
+  background-color: #dad791 !important;
+} */
+.cities_div h5{
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.sotheby{
+  font-family: lora !important;
+}
+
+@media screen and (max-width: 768px) {
+  .times{
+    font-size: 20px !important;
+  }
+  .para{
+    font-size: 12px !important;
+  }
+  .icons{
+    font-size: 25px !important;
+  }
+
+  .cities_div h5{
+    font-size: 14px !important;
+  }
+  .united-kingdom{
+    font-size: 14px !important;
+  }
+  .united-kingdom-para{
+    font-size: 12px !important;
+  }
+  .sotheby{
+    font-size: 30px !important;
+  }
+  .logo{
+    width: 100px !important;
+    height: 20px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 590px) {
+  .carousel-indicators{
+    bottom: 30% !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .times{
+    font-size: 18px !important;
+  }
+  .para{
+    font-size: 10px !important;
+  }
+  .icons{
+    font-size: 20px !important;
+  }
+
+  .cities_div h5{
+    font-size: 10px !important;
+  }
+  .united-kingdom{
+    font-size: 10px !important;
+  }
+  .united-kingdom-para{
+    font-size: 12px !important;
+  }
+  .sotheby{
+    font-size: 22px !important;
+  }
+  .logo{
+    width: 80px !important;
+    height: 18px !important;
+  }
+  .circular_progress{
+    width: 45px !important;
+    height: 60px !important;
+  }
+  .progress_text{
+    bottom: 22% !important;
+    margin-left: 10px !important;
   }
 }
